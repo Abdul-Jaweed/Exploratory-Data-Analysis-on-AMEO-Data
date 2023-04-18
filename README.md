@@ -98,11 +98,11 @@ freq_table.div(freq_table['All'], axis=0)
 ```
 
 
-Specialization	aeronautical engineering	biomedical engineering	biotechnology	chemical engineering	civil engineering	computers	etrx	instrumentation and control engineering	instrumentation engineering	mech	other	All
-Gender												
-Female	0.001045	0.00209	0.009404	0.001045	0.006270	0.630094	0.327064	0.009404	0.000000	0.013584	0.000000	1.0
-Male	0.000658	0.00000	0.001973	0.002960	0.007563	0.554094	0.351858	0.003617	0.001644	0.071358	0.004275	1.0
-All	0.000750	0.00050	0.003752	0.002501	0.007254	0.572286	0.345923	0.005003	0.001251	0.057529	0.003252	1.0
+| Specialization | Aeronautical Engineering | Biomedical Engineering | Biotechnology | Chemical Engineering | Civil Engineering | Computers | ETRX | Instrumentation and Control Engineering | Instrumentation Engineering | Mech | Other | All |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Female | 0.001045 | 0.00209 | 0.009404 | 0.001045 | 0.006270 | 0.630094 | 0.327064 | 0.009404 | 0.000000 | 0.013584 | 0.000000 | 1.0 |
+| Male | 0.000658 | 0.00000 | 0.001973 | 0.002960 | 0.007563 | 0.554094 | 0.351858 | 0.003617 | 0.001644 | 0.071358 | 0.004275 | 1.0 |
+| All | 0.000750 | 0.00050 | 0.003752 | 0.002501 | 0.007254 | 0.572286 | 0.345923 | 0.005003 | 0.001251 | 0.057529 | 0.003252 | 1.0 |
 
 
 **Research Question No : 2 Observation**
