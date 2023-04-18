@@ -56,3 +56,24 @@ The dataset was released by Aspiring Minds from the Aspiring Mind Employment Out
 - Is there a relationship between gender and specialisation? (i.e. Does the preference of Specialisation depend on the Gender?)
 
 
+### Research Question No : 1
+
+After doing your Computer Science Engineering if you take up jobs as a Programming Analyst, Software Engineer, Hardware Engineer and Associate Engineer you can earn up to 2.5-3 lakhs as a fresh graduate. Test this claim with the data given to you.
+
+
+python```
+# Grouping the data by Designation and Specialization and calculating the average salary for each group
+
+grouped_df = rq.groupby(['Designation', 'Specialization']).agg({'Salary': 'mean'}).reset_index()
+
+# Checking if the average salaries are within the range of 2.5-3 lakhs
+
+lower_bound = 250000
+upper_bound = 300000
+result = (rq['Salary'] >= lower_bound) & (rq['Salary'] <= upper_bound)
+
+if result.all():
+    print("The claim is supported by the data.")
+else:
+    print("The claim is not supported by the data.")
+```
