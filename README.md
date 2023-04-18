@@ -48,3 +48,11 @@ The dataset was released by Aspiring Minds from the Aspiring Mind Employment Out
 
 
 
+
+## Research Questions
+
+- Times of India article dated Jan 18, 2019 states that “After doing your Computer Science Engineering if you take up jobs as a Programming Analyst, Software Engineer, Hardware Engineer and Associate Engineer you can earn up to 2.5-3 lakhs as a fresh graduate.” Test this claim with the data given to you.
+
+- Is there a relationship between gender and specialisation? (i.e. Does the preference of Specialisation depend on the Gender?)
+
+
