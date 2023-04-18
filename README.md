@@ -61,7 +61,7 @@ The dataset was released by Aspiring Minds from the Aspiring Mind Employment Out
 After doing your Computer Science Engineering if you take up jobs as a Programming Analyst, Software Engineer, Hardware Engineer and Associate Engineer you can earn up to 2.5-3 lakhs as a fresh graduate. Test this claim with the data given to you.
 
 
-python```
+```python
 # Grouping the data by Designation and Specialization and calculating the average salary for each group
 
 grouped_df = rq.groupby(['Designation', 'Specialization']).agg({'Salary': 'mean'}).reset_index()
@@ -77,3 +77,41 @@ if result.all():
 else:
     print("The claim is not supported by the data.")
 ```
+
+**The claim is not supported by the data.**
+
+
+### Research Question No : 2
+
+Is there a relationship between gender and specialisation? (i.e. Does the preference of Specialisation depend on the Gender?).
+
+
+```python
+# Calculating the frequency distribution of each specialization based on gender
+
+freq_table = pd.crosstab(df['Gender'], df['Specialization'], margins=True)
+
+# Normalizing the frequency table to get the proportions
+
+freq_table.div(freq_table['All'], axis=0)
+
+```
+
+
+Specialization	aeronautical engineering	biomedical engineering	biotechnology	chemical engineering	civil engineering	computers	etrx	instrumentation and control engineering	instrumentation engineering	mech	other	All
+Gender												
+Female	0.001045	0.00209	0.009404	0.001045	0.006270	0.630094	0.327064	0.009404	0.000000	0.013584	0.000000	1.0
+Male	0.000658	0.00000	0.001973	0.002960	0.007563	0.554094	0.351858	0.003617	0.001644	0.071358	0.004275	1.0
+All	0.000750	0.00050	0.003752	0.002501	0.007254	0.572286	0.345923	0.005003	0.001251	0.057529	0.003252	1.0
+
+
+**Research Question No : 2 Observation**
+
+
+- The most popular specializations for both males and females are Computer Science and Electronics and Telecommunications (ETRX), which make up more than 60% and 55% of their respective proportions.
+
+- The proportion of females in Aeronautical Engineering, Biomedical Engineering, and Biotechnology is higher than the proportion of males in these fields.
+
+- The proportion of males in Chemical Engineering, Civil Engineering, and Mechanical Engineering is higher than the proportion of females in these fields.
+
+- Other specializations have a higher proportion of males than females.
